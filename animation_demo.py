@@ -57,7 +57,7 @@ def load_checkpoints(config_path, checkpoint_path, cpu=False):
 
 
 def make_animation(source_image, driving_video, 
-                   generator, kp_detector, tdmm, with_eye=False,
+                   generator:OcclusionAwareGenerator, kp_detector:KPDetector, tdmm:TDMMEstimator, with_eye=False,
                    relative=True, adapt_movement_scale=True, cpu=False):
 
     def batch_orth_proj(X, camera):
