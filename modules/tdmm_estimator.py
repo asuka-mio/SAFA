@@ -6,9 +6,9 @@ import numpy as np
 from skimage.io import imread
 from pytorch3d.io import load_obj
 
-from modules.util import mymobilenetv2, AntiAliasInterpolation2d
-from modules.renderer_util import *
-from modules.FLAME import FLAME
+from .util import mymobilenetv2, AntiAliasInterpolation2d
+from .renderer_util import *
+from .FLAME import FLAME
 
 import pickle
 
